@@ -80,7 +80,7 @@
         </a>
       </li>
     </ul>
-    <v-btn color="success">Success</v-btn>
+    <v-btn color="primary">Success</v-btn>
 
   </div>
 </template>

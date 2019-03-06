@@ -6,9 +6,16 @@ import App from './App'
 import router from './router'
 import Vuetify from 'vuetify'
 import 'vuetify/dist/vuetify.min.css'
+import './styles/variables.css'
+import './styles/theme.css'
 
 Vue.use(Vuex)
-Vue.use(Vuetify)
+Vue.use(Vuetify, {
+  theme: {
+    primary: '41B883',
+    primaryLight: '74CFA6'
+  }
+})
 
 Vue.config.productionTip = false
 

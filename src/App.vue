@@ -6,7 +6,7 @@
           <h1> JUGANDO CON APIS EN VUE</h1>
         </header>
         <nav class="nav">
-          <v-toolbar>
+          <v-toolbar color="primaryLight" height="48px">
             <v-toolbar-items>
               <v-btn flat>Home</v-btn>
               <v-btn flat>Buscador Personajes Marvel</v-btn>
@@ -28,22 +28,6 @@ export default {
 </script>
 
 <style scoped>
-*,
-*:before,
-*:after {
-  box-sizing: border-box;
-}
-
-html {
-    font-size: 1rem;
-}
-
-html,
-body {
-  height: 100%;
-  padding: 0 !important;
-}
-
 .app {
   min-height: 100%;
   display: grid;
@@ -56,13 +40,13 @@ div /deep/ .v-toolbar__content {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: red;
+  background-color: var(--color-primary);
+  box-shadow: 0px 2px 4px #00000070;
 }
 .nav {
-  background-color: green;
+
 }
 .section {
-  padding: 10px;
-  background-color: black;
+  padding: 20px;
 }
 </style>
