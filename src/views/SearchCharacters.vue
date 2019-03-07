@@ -1,36 +1,50 @@
 <template>
-  <div class="hello">
-    <h1>{{ msg }}</h1>
-    <v-btn color="primary">Success</v-btn>
-
+  <div class="search-characters">
+    <div class="search-characters__form">
+        <FormSearch @searchCharacter="searchCharacter"></FormSearch>
+    </div>
+    <div class="search-characters__title-character">
+        <h1> {{ character }}</h1>
+    </div>
+    <div class="search-characters__list">
+        <CharacterList :characters-list="characters"/>
+  </div>
   </div>
 </template>
 
 <script>
+import FormSearch from '../components/FormSearch'
+import CharacterList from '../components/CharacterList'
+
 export default {
-  name: 'Search Character',
+  name: 'SearchCharacters',
+  components: {
+    FormSearch,
+    CharacterList
+  },
   data () {
     return {
-      msg: 'Buscador de personajes Marvel'
+      msg: 'Buscador de personajes Marvel',
+      character: '',
+      characters: []
+    }
+  },
+  methods: {
+    searchCharacter (characterName) {
+      this.character = characterName
+      this.characters = [{name: 'Spiderman'}, {name: 'Iron Man'}]
     }
   }
 }
 </script>
 
-<!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
-h1, h2 {
-  font-weight: normal;
+.search-characters {
+    display:flex;
+    flex-direction: column;
+    align-items: center;
 }
-ul {
-  list-style-type: none;
-  padding: 0;
-}
-li {
-  display: inline-block;
-  margin: 0 10px;
-}
-a {
-  color: #42b983;
+.search-characters__form {
+    width: 60%;
 }
 </style>
