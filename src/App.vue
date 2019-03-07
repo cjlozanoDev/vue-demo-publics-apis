@@ -8,9 +8,9 @@
         <nav class="nav">
           <v-toolbar color="primaryLight" height="48px">
             <v-toolbar-items>
-              <v-btn flat>Home</v-btn>
-              <v-btn flat>Buscador Personajes Marvel</v-btn>
-              <v-btn flat>About</v-btn>
+              <v-btn flat to='/'>Home</v-btn>
+              <v-btn flat to='/search-characters'>Buscador Personajes Marvel</v-btn>
+              <v-btn flat to='/about'>About</v-btn>
             </v-toolbar-items>
           </v-toolbar>
         </nav>
