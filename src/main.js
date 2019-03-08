@@ -19,7 +19,7 @@ Vue.component('font-awesome-icon', FontAwesomeIcon)
 
 Vue.use(Vuex)
 Vue.use(Vuetify, {
-  iconfont: 'fa',
+  iconfont: 'faSvg',
   theme: {
     primary: '41B883',
     primaryLight: '74CFA6'

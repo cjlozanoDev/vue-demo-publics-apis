@@ -3,10 +3,8 @@
     <v-form ref="form">
         <v-text-field
             v-model="nameCharacter"
-            label="Busca tu personaje">
-            <template slot="append">
-                <v-icon>search</v-icon>
-            </template>
+            label="Busca tu personaje"
+            append-icon="fas fa-search">
         </v-text-field>
         <v-btn
             color="primary"
