@@ -12,14 +12,13 @@ import './styles/theme.css'
 import { library } from '@fortawesome/fontawesome-svg-core'
 import { faSearch } from '@fortawesome/free-solid-svg-icons'
 import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome'
-
 library.add(faSearch)
 
 Vue.component('font-awesome-icon', FontAwesomeIcon)
 
 Vue.use(Vuex)
 Vue.use(Vuetify, {
-  iconfont: 'fa',
+  iconfont: 'faSvg',
   theme: {
     primary: '41B883',
     primaryLight: '74CFA6'

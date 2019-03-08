@@ -1,12 +1,10 @@
 <template>
   <div class="form-seach">
-    <v-form ref="form">
+    <v-form ref="form" @submit="searchCharacter" onSubmit="return false;">
         <v-text-field
             v-model="nameCharacter"
-            label="Busca tu personaje">
-            <template slot="append">
-                <v-icon>search</v-icon>
-            </template>
+            label="Busca tu personaje"
+            append-icon="fa-search">
         </v-text-field>
         <v-btn
             color="primary"

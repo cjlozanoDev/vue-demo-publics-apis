@@ -29,5 +29,13 @@ export default {
 </script>
 
 <style scoped>
-
+.characters-list {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.character-list__item {
+    width: calc(33.33333% - 20px);
+    margin: 0 20px 20px 0;
+}
 </style>

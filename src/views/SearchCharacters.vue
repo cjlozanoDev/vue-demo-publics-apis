@@ -8,7 +8,7 @@
     </div>
     <div class="search-characters__list">
         <CharacterList :characters-list="characters"/>
-  </div>
+    </div>
   </div>
 </template>
 
@@ -32,7 +32,7 @@ export default {
   methods: {
     searchCharacter (characterName) {
       this.character = characterName
-      this.characters = [{name: 'Spiderman'}, {name: 'Iron Man'}]
+      this.characters = [{name: 'Spiderman'}, {name: 'Iron Man'}, {name: 'capitan amarica'}, {name: 'thor'}, {name: 'hulk'}]
     }
   }
 }
@@ -46,5 +46,8 @@ export default {
 }
 .search-characters__form {
     width: 60%;
+}
+.search-characters__list {
+    width: 100%;
 }
 </style>
