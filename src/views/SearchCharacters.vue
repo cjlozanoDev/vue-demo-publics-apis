@@ -7,7 +7,7 @@
         <h1> {{ character }}</h1>
     </div>
     <div class="search-characters__list">
-        <CharacterList :characters-list="characters"/>
+        <CharacterList/>
     </div>
   </div>
 </template>
@@ -31,8 +31,8 @@ export default {
   },
   methods: {
     searchCharacter (characterName) {
+      this.$store.dispatch('marvel/FETCH_CHARACTERS', characterName)
       this.character = characterName
-      this.characters = [{name: 'Spiderman'}, {name: 'Iron Man'}, {name: 'capitan amarica'}, {name: 'thor'}, {name: 'hulk'}]
     }
   }
 }

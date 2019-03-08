@@ -3,22 +3,17 @@
     <div>
         <v-card>
             <v-img
-            src="https://cdn.vuetifyjs.com/images/cards/desert.jpg"
+            :src="character.image"
             aspect-ratio="1.8"
             ></v-img>
 
             <v-card-title primary-title>
             <div>
-                <h3 class="headline mb-0">Kangaroo Valley Safari</h3>
-                <div> fgsdfgsdfgsdf sdf gsd gsdf gsdf gs </div>
+                <h3 class="headline mb-0">{{character.name}}</h3>
+                <div> {{character.description}} </div>
             </div>
             </v-card-title>
-
-            <v-card-actions>
-            <v-btn flat color="orange">Share</v-btn>
-            <v-btn flat color="orange">Explore</v-btn>
-            </v-card-actions>
-      </v-card>
+        </v-card>
     </div>
   </div>
 </template>
