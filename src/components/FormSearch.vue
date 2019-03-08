@@ -4,7 +4,7 @@
         <v-text-field
             v-model="nameCharacter"
             label="Busca tu personaje"
-            append-icon="fas fa-search">
+            append-icon="fa-search">
         </v-text-field>
         <v-btn
             color="primary"
