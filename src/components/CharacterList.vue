@@ -10,19 +10,19 @@
 
 <script>
 import CharacterItem from '../components/CharacterItem'
+import { mapGetters } from 'vuex'
+
 export default {
   name: 'charactersList',
   components: {
     CharacterItem
   },
+  computed: {
+    ...mapGetters('marvel', { charactersList: 'characters' })
+  },
   data () {
     return {
       msg: 'Listado de personajes'
-    }
-  },
-  props: {
-    charactersList: {
-      type: Array
     }
   }
 }

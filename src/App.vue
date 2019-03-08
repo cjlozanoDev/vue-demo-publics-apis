@@ -31,7 +31,7 @@ export default {
 .app {
   min-height: 100%;
   display: grid;
-  grid-template-rows: 15% 7% 1fr;
+  grid-template-rows: 100px 48px 1fr;
 }
 div /deep/ .v-toolbar__content {
   padding: 0 !important;
