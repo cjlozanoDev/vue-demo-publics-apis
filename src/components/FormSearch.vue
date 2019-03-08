@@ -1,6 +1,6 @@
 <template>
   <div class="form-seach">
-    <v-form ref="form">
+    <v-form ref="form" @submit="searchCharacter" onSubmit="return false;">
         <v-text-field
             v-model="nameCharacter"
             label="Busca tu personaje"
